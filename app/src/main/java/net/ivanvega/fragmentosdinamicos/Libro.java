@@ -6,9 +6,9 @@ public class Libro {
 
     static Vector<Libro> libros = new Vector<Libro>();
     static{
-        final String link1 = "https://github.com/AndrosGreen/FragmentosDinamicos2021/blob/master/app/audio/again.flac?raw=true";
-        final String link2 = "https://github.com/AndrosGreen/FragmentosDinamicos2021/blob/master/app/audio/kimi_ga_iru.flac?raw=true";
-        final String link3 = "https://github.com/AndrosGreen/FragmentosDinamicos2021/blob/master/app/audio/kimi_ga_iru.flac?raw=true";
+        final String link1 = "https://github.com/AndrosGreen/AudioLibros-Movil02/blob/main/app/audio/again.flac?raw=true";
+        final String link2 = "https://github.com/AndrosGreen/AudioLibros-Movil02/blob/main/app/audio/again.flac?raw=true";
+        final String link3 = "https://github.com/AndrosGreen/AudioLibros-Movil02/blob/main/app/audio/again.flac?raw=true";
 
         libros.add(new Libro("Kappa", "Akutagawa", R.drawable.kappa, link1, Libro.G_S_XIX, false, false));
         libros.add(new Libro("Avecilla", "Alas Clarín, Leopoldo", R.drawable.avecilla, link2, Libro.G_S_XIX, true, false));
