@@ -6,9 +6,10 @@ public class Libro {
 
     static Vector<Libro> libros = new Vector<Libro>();
     static{
-        final String link1 = "https://github.com/AndrosGreen/AudioLibros-Movil02/blob/main/app/audio/again.flac?raw=true";
-        final String link2 = "https://github.com/AndrosGreen/AudioLibros-Movil02/blob/main/app/audio/again.flac?raw=true";
-        final String link3 = "https://github.com/AndrosGreen/AudioLibros-Movil02/blob/main/app/audio/again.flac?raw=true";
+
+        final String link1 = "https://github.com/AndrosGreen/AudioLibros-Movil02/blob/main/app/audio/1.flac?raw=true";
+        final String link2 = "https://github.com/AndrosGreen/AudioLibros-Movil02/blob/main/app/audio/2.flac?raw=true";
+        final String link3 = "https://github.com/AndrosGreen/AudioLibros-Movil02/blob/main/app/audio/3.flac?raw=true";
 
         libros.add(new Libro("Kappa", "Akutagawa", R.drawable.kappa, link1, Libro.G_S_XIX, false, false));
         libros.add(new Libro("Avecilla", "Alas Clarín, Leopoldo", R.drawable.avecilla, link2, Libro.G_S_XIX, true, false));
@@ -17,6 +18,7 @@ public class Libro {
         libros.add(new Libro("Canción de Rolando", "Anónimo", R.drawable.cancion_rolando, link2, Libro.G_EPICO, false, true));
         libros.add(new Libro("Matrimonio de sabuesos", "Agata Christie", R.drawable.matrim_sabuesos, link3, Libro.G_SUSPENSE, false, true));
         libros.add(new Libro("La iliada", "Homero", R.drawable.la_iliada, link1, Libro.G_EPICO, true, false));
+
     }
 
     public String getTitulo() {

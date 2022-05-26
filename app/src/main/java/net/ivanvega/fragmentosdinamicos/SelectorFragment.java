@@ -108,7 +108,7 @@ public class SelectorFragment extends Fragment {
                         recyclerViewLibros.
                                 getChildAdapterPosition(view);
                 Toast.makeText(getActivity(),
-                        "ELement at selected" + pos,
+                        "Libro seleccionado " + pos,
                         Toast.LENGTH_LONG).show();
 
                 ((MainActivity)this.contexto).mostrarDetalle(pos, false);

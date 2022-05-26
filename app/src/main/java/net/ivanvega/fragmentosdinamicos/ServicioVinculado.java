@@ -73,7 +73,7 @@ public class ServicioVinculado extends Service implements MediaController.MediaP
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             String CHANNEL_ID = "1000";
             String name = "Canal de audio";
-            String description = "Notificación que muestra la canción actual";
+            String description = "Estas escuchando...";
             int importance = NotificationManager.IMPORTANCE_DEFAULT;
             NotificationChannel channel = new NotificationChannel(CHANNEL_ID, name, importance);
             channel.setDescription(description);
@@ -104,7 +104,6 @@ public class ServicioVinculado extends Service implements MediaController.MediaP
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Log.d(TAG, "Apagando serviucio");
         mediaPlayer.stop();
         mediaPlayer.release();
         stopForeground(true);
